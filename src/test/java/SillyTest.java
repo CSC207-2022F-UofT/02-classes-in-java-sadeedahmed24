@@ -34,7 +34,7 @@ public class SillyTest {
         return bos.toString().split("\n");
     }
 
-    @Test(timeout = 50)
+    @Test(timeout = 500)
     public void testTask1() {
         Silly sample = new Silly("a", "b");
         assertEquals("ab", sample.name);
@@ -43,7 +43,7 @@ public class SillyTest {
         assertEquals("firstsecond", sample2.name);
     }
 
-    @Test(timeout = 50)
+    @Test(timeout = 500)
     public void testTask2() {
         String[] output = getMainOutput();
 
@@ -51,7 +51,7 @@ public class SillyTest {
         assertEquals("The countStatic calls will return [0, 1, 2, 3]", output[3].strip());
     }
 
-    @Test(timeout = 50)
+    @Test(timeout = 500)
     public void testTask3() {
         Silly a = new Silly(1);
         Silly b = new Silly(3);
@@ -62,7 +62,7 @@ public class SillyTest {
         assertEquals("my name", c.toString());
     }
 
-    @Test(timeout = 50)
+    @Test(timeout = 500)
     public void testTask4() {
         Silly a = new Silly(1);
         Silly b = new Silly("Silly #1");
@@ -73,7 +73,7 @@ public class SillyTest {
         assertFalse(c.equals(a));
     }
 
-    @Test(timeout = 50)
+    @Test(timeout = 500)
     public void testTask5() {
         Silly base = new Silly(1);
         Silly equal = new Silly("Silly #1");
